@@ -1,12 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ECASA Project</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/index.jsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ECASA - Expanded Cinema & Science Art</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 顶部导航栏 -->
+  <header class="header">
+    <div class="nav-container">
+      <a href="#home" class="logo">ECASA</a>
+      <button class="menu-toggle" id="menuToggle">☰</button>
+      <nav class="nav-menu" id="navMenu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#events" class="nav-link">Events</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#people" class="nav-link">People</a>
+        <a href="#apply" class="nav-link">Apply</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 主内容区 -->
+  <main class="main-content">
+    <!-- Home 页面 -->
+    <section id="home" class="page active">
+      <h1>Expanded Cinema & Science Art</h1>
+      <p class="subtitle">CMA</p>
+      <div class="content-block">
+        <p>Welcome to ECASA, a platform for expanded cinema, interdisciplinary art, and science-driven creative practice.</p>
+      </div>
+    </section>
+
+    <!-- Events 页面 -->
+    <section id="events" class="page">
+      <h1>Events</h1>
+      <p class="subtitle">Upcoming & Past Screenings, Workshops & Exhibitions</p>
+      <div class="content-block">
+        <p>Explore our calendar of expanded cinema events, from experimental film screenings to immersive media installations.</p>
+      </div>
+    </section>
+
+    <!-- Projects 页面 -->
+    <section id="projects" class="page">
+      <h1>Projects</h1>
+      <p class="subtitle">Our Ongoing & Completed Creative Research</p>
+      <div class="content-block">
+        <p>Discover interdisciplinary projects at the intersection of cinema, science, and contemporary art.</p>
+      </div>
+    </section>
+
+    <!-- People 页面 -->
+    <section id="people" class="page">
+      <h1>People</h1>
+      <p class="subtitle">Our Team & Contributors</p>
+      <div class="content-block">
+        <p>Meet the artists, researchers, and collaborators behind ECASA.</p>
+      </div>
+    </section>
+
+    <!-- Apply 页面 -->
+    <section id="apply" class="page">
+      <h1>Apply</h1>
+      <p class="subtitle">Opportunities & Submissions</p>
+      <div class="content-block">
+        <p>Learn about open calls, residencies, and how to submit your work to ECASA.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
 </html>
